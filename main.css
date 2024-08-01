@@ -5,14 +5,12 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 }
-
 .box {
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
-    align-self: center;
-    width: 13rem;
+    width: 100%;
     height: 10rem;
     background:#676470;
     transition:all 0.3s ease;
@@ -20,7 +18,6 @@
     color: white;
     font-size: 40px;
 }
-
 /* box1 */
 .box1 {
     background-color: lightslategray;
@@ -74,17 +71,87 @@
     transform: translateX(-3px);
 }
 /* box7 */
+
+
 .box7 {
     background-color: green;
 }
-.box7:hover {
-    -webkit-animation: swing 1s ease;
-    animation: swing 1s ease;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-}
 
 
+    @-webkit-keyframes swing
+    {
+        15%
+        {
+            -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+        }
+        30%
+        {
+            -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+        } 
+        50%
+        {
+            -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+        }
+        65%
+        {
+            -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+        }
+        80%
+        {
+            -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+        }
+        100%
+        {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }
+    @keyframes swing
+    {
+        15%
+        {
+            -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+        }
+        30%
+        {
+            -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+        }
+        50%
+        {
+            -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+        }
+        65%
+        {
+            -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+        }
+        80%
+        {
+            -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+        }
+        100%
+        {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }
+    
+    .box7:hover
+    {
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+    }
 
 
 
@@ -101,8 +168,8 @@
 /* box9 */
 .box9 {
     background-color: pink;
-    height: 10rem;
-    width: 61rem;
+    height: 7rem;
+    width: 100%;
     grid-column:  span 4;
 }
 .box9:hover {
